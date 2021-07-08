@@ -1,0 +1,26 @@
+.contenedor{
+    display: flex;
+    justify-content: center;
+  }
+body{
+    background-image: url("https://cdn.domestika.org/c_limit,dpr_1.0,f_auto,q_auto,w_610/v1539725401/content-items/002/562/022/C7-original.jpg?1539725401");
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+    color:blue;
+}
+img{
+    width: 400px;
+}
+#thirdDiv {
+    height: 600px;
+    width: 500px;
+    background-color: grey;
+    padding: 50px;
+    border: 5px dashed white;
+}
+#spanId {
+    font-size: 18px;
+    margin: 50px;
+}
