@@ -18,10 +18,12 @@ function mayoriaDeEdad(edad) {
   if (edad >= 18) {
     return "Allowed";
   }
-  else {
+  if (edad < 18) {
     return "Not allowed";
-  }
+  }  
 }
+
+
 
 
 function conection(status) {
@@ -88,7 +90,15 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-return numero === 10 || numero === 5; 
+  return numero === 10 || numero === 5;
+  return "true"
+  /*if (numero === 10) {
+    return true
+  }
+  if (numero === 5) {
+      return true
+  }
+  return false*/
 }
 
 
@@ -96,7 +106,12 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  return numero < 50 && numero > 20;
+  //return numero < 50 && numero > 20;
+if (numero < 50 && numero > 20) {
+  return true;
+} else {
+  return false;
+}
 }
 
 
@@ -108,7 +123,9 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  return numero % 1 === 0; 
+  //return numero % 1 === 0;
+  return (Math.floor (numero) === numero)
+ 
 }
 
 
@@ -122,6 +139,13 @@ function fizzBuzz(numero) {
   if(numero % 3 === 0) return 'fizz';
   if(numero % 5 === 0) return 'buzz';
   return numero;
+  /* for (var numero = 0; numero <=100; numero +=1)
+  return numero;
+  if (numero = numero % 3 === 0) {
+    return 'fizz'
+  } else {
+    (numero = numero % 5 === 0)
+  }return 'buzz'*/
 }
 
 
@@ -158,7 +182,7 @@ function esPrimo(numero) {
 if(numero < 2) return false;
 if(numero === 2) return true;
 for(var i = 2; i < numero; i++) {
-  if(numero % i === 0) {
+  if(numero % i === 0) {  
     return false;
   }
  }
@@ -183,7 +207,7 @@ function tablaDelSeis() {
   for (let i = 0; i < 11; i++) {
         arrayTablaDel6.push(6 * i)
   }
-  return arrayTablaDel6
+  return arrayTablaDel6;
 }
 
 function tieneTresDigitos(numero) {
