@@ -77,14 +77,15 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  for(var i = 0; i < array.length; i++) {
+  /*for(var i = 0; i < array.length; i++) {
     if(array[i] === elemento) {
       return true;
     }
   }
-  return false;
+  return false;*/
+  return array.includes(elemento);
+  
 }
-
 
 function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
@@ -142,7 +143,7 @@ function cuentoElementos(arreglo){
       if(arreglo[i] > 19){
         contador++
       }
-    }
+    } 
     return contador;
   }
 
@@ -267,7 +268,7 @@ function continueStatement(numero) {
 
 
 // No modificar nada debajo de esta línea
-// --------------------------------
+// --------------------------------------
 
 module.exports = {
   devolverPrimerElemento,
